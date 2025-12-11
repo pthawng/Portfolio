@@ -1,3 +1,4 @@
+
 "use client";
 
 import { motion } from "framer-motion";
@@ -40,14 +41,42 @@ export function Contact() {
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [isSuccess, setIsSuccess] = useState(false);
 
-    const handleSubmit = async (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         setIsSubmitting(true);
-        // Simulate network request
-        await new Promise(resolve => setTimeout(resolve, 1500));
-        setIsSubmitting(false);
-        setIsSuccess(true);
-        setTimeout(() => setIsSuccess(false), 3000);
+
+        // Store form reference before async operations
+        const form = e.currentTarget;
+        const formData = new FormData(form);
+        const data = {
+            name: formData.get("name"),
+            email: formData.get("email"),
+            message: formData.get("message"),
+        };
+
+        try {
+            const response = await fetch("/api/send", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(data),
+            });
+
+            if (!response.ok) {
+                const errorData = await response.json();
+                throw new Error(errorData.error || "Failed to send message");
+            }
+
+            setIsSuccess(true);
+            form.reset();
+            setTimeout(() => setIsSuccess(false), 5000);
+        } catch (error) {
+            console.error("Error sending message:", error);
+            alert(error instanceof Error ? error.message : t.contact.form.error);
+        } finally {
+            setIsSubmitting(false);
+        }
     };
 
     return (
@@ -145,7 +174,7 @@ export function Contact() {
                                     </label>
                                     <div className="relative group">
                                         <User className="absolute left-4 top-3.5 h-5 w-5 text-muted-foreground group-focus-within:text-primary transition-colors" />
-                                        <ContactInput id="name" placeholder="John Doe" className="pl-12" required />
+                                        <ContactInput id="name" name="name" placeholder="John Doe" className="pl-12" required />
                                     </div>
                                 </div>
 
@@ -155,7 +184,7 @@ export function Contact() {
                                     </label>
                                     <div className="relative group">
                                         <Mail className="absolute left-4 top-3.5 h-5 w-5 text-muted-foreground group-focus-within:text-primary transition-colors" />
-                                        <ContactInput id="email" type="email" placeholder="john@example.com" className="pl-12" required />
+                                        <ContactInput id="email" name="email" type="email" placeholder="john@example.com" className="pl-12" required />
                                     </div>
                                 </div>
 
@@ -163,7 +192,7 @@ export function Contact() {
                                     <label htmlFor="message" className="text-sm font-semibold text-foreground/80 ml-1">
                                         {t.contact.form.message}
                                     </label>
-                                    <ContactTextarea id="message" placeholder="Hello, I'd like to discuss a project..." required />
+                                    <ContactTextarea id="message" name="message" placeholder="Hello, I'd like to discuss a project..." required />
                                 </div>
 
                                 <Button

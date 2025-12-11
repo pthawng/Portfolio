@@ -40,14 +40,14 @@ export const DATA = {
       subtitle: "A showcase of my recent work",
       list: [
         {
-          title: "Modern E-commerce",
+          title: "Jewelry E-commerce System",
           description: "A complete e-commerce platform built with Next.js, Stripe, and Prisma. Features include real-time inventory, secure checkout, and an admin dashboard.",
           tags: ["Next.js", "TypeScript", "Stripe", "Prisma"],
           link: "#",
           github: "#",
         },
         {
-          title: "Project Alpha",
+          title: "HCM Metro System",
           description: "A collaborative task management tool featuring real-time updates, team workspaces, and intuitive drag-and-drop interfaces.",
           tags: ["React", "Socket.io", "Node.js", "Redis"],
           link: "#",
@@ -64,7 +64,8 @@ export const DATA = {
         email: "Your Email",
         message: "Message",
         btn: "Send Message",
-        success: "Message sent!"
+        success: "Message sent!",
+        error: "Failed to send message. Please try again."
       },
       info: {
         email: "contact@rayparadis.dev",
@@ -122,7 +123,8 @@ export const DATA = {
         email: "Email của bạn",
         message: "Tin nhắn",
         btn: "Gửi tin nhắn",
-        success: "Đã gửi tin nhắn!"
+        success: "Đã gửi tin nhắn!",
+        error: "Gửi tin nhắn thất bại. Vui lòng thử lại."
       },
       info: {
         email: "contact@rayparadis.dev",
