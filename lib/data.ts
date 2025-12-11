@@ -3,17 +3,17 @@ import { Github, Linkedin, Mail, Twitter } from "lucide-react";
 export const SOCIALS = [
   {
     name: "GitHub",
-    url: "https://github.com",
+    url: "https://github.com/pthawng",
     icon: Github,
   },
   {
     name: "LinkedIn",
-    url: "https://linkedin.com",
+    url: "https://www.linkedin.com/in/l%C3%AA-th%E1%BA%AFng-99b4a8255/",
     icon: Linkedin,
   },
   {
     name: "Email",
-    url: "mailto:contact@example.com",
+    url: "https://mail.google.com/mail/?view=cm&fs=1&to=lephuocthang207@gmail.com",
     icon: Mail,
   },
 ];

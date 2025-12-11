@@ -1,6 +1,4 @@
 import { cn } from "@/lib/utils";
-import { cva, type VariantProps } from "class-variance-authority"; // Need to add cva if I use it, but keeping it simple for now without extra dependency if not needed. 
-// Actually I don't have cva installed. I will just use simple props.
 
 interface BadgeProps {
     children: React.ReactNode;

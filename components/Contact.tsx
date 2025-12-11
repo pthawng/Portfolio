@@ -114,7 +114,12 @@ export function Contact() {
                                 </div>
                                 <div>
                                     <p className="text-sm font-medium text-muted-foreground uppercase tracking-wider">Email</p>
-                                    <a href={`mailto:${t.contact.info.email}`} className="text-lg font-semibold hover:text-primary transition-colors">
+                                    <a
+                                        href={`https://mail.google.com/mail/?view=cm&fs=1&to=${t.contact.info.email}`}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="text-lg font-semibold hover:text-primary transition-colors"
+                                    >
                                         {t.contact.info.email}
                                     </a>
                                 </div>
