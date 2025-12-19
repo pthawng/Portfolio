@@ -8,7 +8,7 @@ export const SOCIALS = [
   },
   {
     name: "LinkedIn",
-    url: "https://www.linkedin.com/in/l%C3%AA-th%E1%BA%AFng-99b4a8255/",
+    url: "https://www.linkedin.com/in/l%C3%AA-th%E1%BA%AFng-99b4a8255/", // Keeping existing valid link
     icon: Linkedin,
   },
   {
@@ -21,8 +21,8 @@ export const SOCIALS = [
 export const DATA = {
   en: {
     hero: {
-      role: "Full Stack Developer",
-      about: "I'm a Full Stack Developer with a passion for building high-performance, visually impressive web applications. With expertise in Next.js, TypeScript, and modern backend technologies, I create seamless digital experiences.",
+      role: "Software Engineering",
+      about: "A final-year Software Engineering student with a solid foundation in Backend Development and hands-on experience in building scalable E-commerce and Transit systems. Proficient in Nest.JS, Node.js, database optimization, and integrating complex payment services.",
       cta: "Contact Me",
     },
     nav: {
@@ -40,25 +40,25 @@ export const DATA = {
       subtitle: "A showcase of my recent work",
       list: [
         {
-          title: "Jewelry E-commerce System",
-          description: "A complete e-commerce platform built with Next.js, Stripe, and Prisma. Features include real-time inventory, secure checkout, and an admin dashboard.",
-          tags: ["Next.js", "TypeScript", "Stripe", "Prisma"],
+          title: "Ray Paradis (Jewelry E-Commerce)",
+          description: "A comprehensive B2C e-commerce platform for high-end jewelry. Features microservices-ready architecture, secure authentication, and complex payment/logistics integrations.",
+          tags: ["NestJS", "Next.js 16", "PostgreSQL", "Redis", "Docker"],
           link: "#",
-          github: "#",
+          github: "https://github.com/pthawng/E-Commerce/tree/ecomerce",
         },
         {
-          title: "HCM Metro System",
-          description: "A collaborative task management tool featuring real-time updates, team workspaces, and intuitive drag-and-drop interfaces.",
-          tags: ["React", "Socket.io", "Node.js", "Redis"],
+          title: "HCM Metro Transit System",
+          description: "An urban transit platform supporting route search and ticket booking via REST APIs. Includes a centralized Admin Dashboard and QR code digital ticketing.",
+          tags: ["Node.js", "Express", "MongoDB", "OAuth 2.0"],
           link: "#",
-          github: "#",
+          github: "https://github.com/pthawng/Metro",
         },
       ]
     },
     contact: {
       title: "Get in Touch",
       subtitle: "Have a project in mind? Let's talk.",
-      text: "I'm currently open for new opportunities...",
+      text: "I'm always open to discussing new projects, creative ideas or opportunities to be part of your visions.",
       form: {
         name: "Your Name",
         email: "Your Email",
@@ -68,8 +68,8 @@ export const DATA = {
         error: "Failed to send message. Please try again."
       },
       info: {
-        email: "contact@rayparadis.dev",
-        phone: "+84 123 456 789",
+        email: "lephuocthang207@gmail.com",
+        phone: "+84 333 126 429",
         address: "Ho Chi Minh City, Vietnam"
       }
     },
@@ -80,8 +80,8 @@ export const DATA = {
   },
   vi: {
     hero: {
-      role: "Lập trình viên Full Stack",
-      about: "Tôi là một Lập trình viên Full Stack với niềm đam mê xây dựng các ứng dụng web hiệu năng cao và ấn tượng. Với chuyên môn về Next.js, TypeScript và các công nghệ backend hiện đại, tôi tạo ra các trải nghiệm kỹ thuật số liền mạch.",
+      role: "Kỹ sư Phần mềm",
+      about: "Sinh viên năm cuối ngành Kỹ thuật Phần mềm với nền tảng vững chắc về Backend Development và kinh nghiệm xây dựng các hệ thống Thương mại điện tử và Vận tải quy mô lớn. Thành thạo Nest.JS, Node.js, tối ưu hóa cơ sở dữ liệu và tích hợp thanh toán.",
       cta: "Liên hệ tôi",
     },
     nav: {
@@ -99,25 +99,25 @@ export const DATA = {
       subtitle: "Một số dự án gần đây của tôi",
       list: [
         {
-          title: "Modern E-commerce",
-          description: "Một nền tảng thương mại điện tử hoàn chỉnh được xây dựng với Next.js, Stripe và Prisma. Bao gồm quản lý kho thời gian thực, thanh toán an toàn và bảng điều khiển quản trị.",
-          tags: ["Next.js", "TypeScript", "Stripe", "Prisma"],
+          title: "Ray Paradis (Thương mại điện tử)",
+          description: "Nền tảng thương mại điện tử B2C toàn diện cho trang sức cao cấp. Kiến trúc sẵn sàng cho microservices, xác thực bảo mật và tích hợp thanh toán/vận chuyển phức tạp.",
+          tags: ["NestJS", "Next.js 16", "PostgreSQL", "Redis", "Docker"],
           link: "#",
-          github: "#",
+          github: "https://github.com/pthawng/E-Commerce",
         },
         {
-          title: "Project Alpha",
-          description: "Công cụ quản lý tác vụ cộng tác với cập nhật thời gian thực, không gian làm việc nhóm và giao diện kéo thả trực quan.",
-          tags: ["React", "Socket.io", "Node.js", "Redis"],
+          title: "Hệ thống Metro HCM",
+          description: "Nền tảng vận tải đô thị hỗ trợ tìm kiếm lộ trình và đặt vé qua REST API. Bao gồm Dashboard quản trị tập trung và vé điện tử mã QR.",
+          tags: ["Node.js", "Express", "MongoDB", "OAuth 2.0"],
           link: "#",
-          github: "#",
+          github: "https://github.com/pthawng/Metro",
         },
       ]
     },
     contact: {
       title: "Liên hệ",
       subtitle: "Bạn có dự án muốn hợp tác? Hãy trò chuyện nhé.",
-      text: "Tôi hiện đang tìm kiếm cơ hội mới...",
+      text: "Tôi luôn sẵn sàng thảo luận về các dự án mới, ý tưởng sáng tạo hoặc cơ hội hợp tác.",
       form: {
         name: "Tên của bạn",
         email: "Email của bạn",
@@ -127,9 +127,9 @@ export const DATA = {
         error: "Gửi tin nhắn thất bại. Vui lòng thử lại."
       },
       info: {
-        email: "contact@rayparadis.dev",
-        phone: "+84 123 456 789",
-        address: "Ti Ho Chi Minh, Viet Nam"
+        email: "lephuocthang207@gmail.com",
+        phone: "+84 333 126 429",
+        address: "TP. Hồ Chí Minh, Việt Nam"
       }
     },
     footer: {
@@ -142,16 +142,17 @@ export const DATA = {
 export const SKILLS = [
   {
     category: "Languages",
-    items: ["TypeScript", "JavaScript", "SQL", "HTML5", "CSS3"],
+    items: ["TypeScript", "JavaScript", "SQL", "HTML5", "CSS4/SCSS", "Data Structures"],
   },
   {
     category: "Frontend",
     items: [
       "Next.js 16",
       "React.js",
-      "Tailwind CSS",
-      "Framer Motion",
+      "Vite",
+      "TailwindCSS",
       "Zustand",
+      "React Query",
     ],
   },
   {
@@ -159,20 +160,35 @@ export const SKILLS = [
     items: [
       "NestJS",
       "Node.js",
-      "PostgreSQL",
-      "Prisma ORM",
-      "Redis",
-      "RESTful API",
+      "Express",
+      "RESTful APIs",
+      "Passport.js",
+      "OAuth2",
     ],
   },
   {
-    category: "Concepts",
-    items: ["OOP", "MVC", "System Design", "JWT", "OAuth2"],
+    category: "Database & DevOps",
+    items: [
+      "PostgreSQL",
+      "MongoDB",
+      "Redis",
+      "Prisma v7",
+      "Docker",
+      "GitHub Actions",
+    ],
+  },
+  {
+    category: "Architecture",
+    items: ["Clean Architecture", "Design Patterns", "RBAC/ABAC", "OWASP", "Microservices"],
+  },
+  {
+    category: "Certificates",
+    items: ["Postman API Expert", "SQL Basics", "Quality Assurance"],
   },
 ];
 
 // Fallback INFO for components not fully migrated yet if needed
 export const INFO = {
   name: "Lê Phước Thắng",
-  email: "contact@example.com"
+  email: "lephuocthang207@gmail.com"
 }
