@@ -1,6 +1,6 @@
 # Lê Phước Thắng - Portfolio
 
-A high-performance, visually impressive portfolio website built with **Next.js 16**, **TypeScript**, and **Tailwind CSS**. This project showcases a premium "Minimalist High-End" design with advanced animations, custom themes, and bilingual ssupport. 
+A high-performance, visually impressive portfolio website built with **Next.js 16**, **TypeScript**, and **Tailwind CSS**. This project showcases a premium "Minimalist High-End" design with advanced animations, custom themes, and bilingual support !! 
 
 ## 🚀 Tech Stack
 
